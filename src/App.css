@@ -1,0 +1,1009 @@
+*{
+  font-size: 1.2rem;
+}
+
+
+#content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 250px);
+  margin-left: 250px;
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .brand {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.sidebar .brand span {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+.side-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.side-menu li {
+  width: 100%;
+}
+.side-menu li:hover {
+  background: #333;
+}
+.side-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.side-menu li a:hover {
+  background: #444;
+}
+.side-menu li a .text {
+  margin-left: 10px;
+}
+.side-menu li.active a {
+  background: #666;
+}
+.side-menu .logout {
+  margin-top: auto;
+}
+.sidebar {
+  height: 100vh;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.sidebar .brand {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar .brand span {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.side-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.side-menu li {
+  width: 100%;
+}
+
+.side-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-menu li a .text {
+  margin-left: 10px;
+}
+
+.side-menu li.active a {
+  background: #444;
+}
+
+.side-menu .logout {
+  margin-top: auto;
+}
+
+.sidebar.closed .side-menu li a .text {
+  display: none;
+}
+
+
+/* NAVBAR CSS */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 110px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+}
+.navbar .form-input {
+  display: flex;
+}
+.navbar .form-input input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+}
+.navbar .form-input .search-btn {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #333;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+}
+.navbar .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+/* Styles for the search results dropdown */
+.search-results {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  width: 300px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-left: 110px;
+
+}
+
+.search-results ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-results li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styles for the message */
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+/* _____________________________________________*/
+/* DASHBOARD CSS */
+.dashboard {
+  padding: 20px;
+}
+.dashboard .head-title {
+  margin-bottom: 20px;
+  
+}
+.box-info {
+  display: flex;
+  justify-content: space-between;
+}
+.box-info li {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.box-info li i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.box-info .text h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.box-info .text p {
+  margin: 5px 0 0;
+  color: #666;
+}
+.dashboard .head-title {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard .head-title h1 {
+  margin: 0;
+}
+
+.dashboard .head-title button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.box-info li {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.box-info li i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.box-info .text h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.box-info .text p {
+  margin: 5px 0 0;
+  color: #666;
+}
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard .head-title {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard .head-title h1 {
+  margin: 0;
+}
+
+.box-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.box-info li {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.box-info li i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.box-info .text h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.box-info .text p {
+  margin: 5px 0 10px;
+  color: #666;
+}
+
+.box-info .text button {
+  padding: 5px 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.box-info .text button:hover {
+  background: #555;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.chart {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  flex: 1 1 45%;
+  min-width: 300px;
+  max-width: 45%;
+}
+
+.chart h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* LOGIN CSS */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+
+.login-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height:300px;
+  text-align: center;
+}
+/* 
+ .login-form h1 {
+  margin-bottom: 20px;
+  width:100%;
+} */
+
+.login-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 2em;
+}
+
+.login-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.login-form .form-group input {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-left: 10px;
+  
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.login-form button:hover {
+  background: #555;
+}
+
+/* MarkAttendancePage */
+.mark-attendance-container {
+  margin-top: 20px;
+  /* animation: fadeIn 1s ease-in-out; */
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.attendance-table th,
+.attendance-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.attendance-table th {
+  background-color: #f2f2f2;
+}
+
+.present-button,
+.absent-button {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.present-button {
+  background-color: #71dd75;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.present-button:hover{
+background-color: #39a13e;
+transition: ease 0.2s;
+}
+
+.absent-button {
+  background-color: #f75a4f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.absent-button:hover{
+  background-color: #ff1100;
+  transition: ease 0.2s;
+}
+
+
+.filter-container {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.filter-container select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 200px;
+  outline: none;
+  cursor: pointer
+}
+.filter-container select:after{
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.filter-container select:hover {
+  border-color: #999;
+}
+
+
+.filter-container select:focus {
+  border-color: #007bff;
+}
+
+/* Attendance Page */
+.attendance-container {
+  margin: 20px;
+
+}
+
+.attendance-header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.attendance-table-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th, .attendance-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.attendance-table th {
+  background-color: #f0f0f0;
+}
+
+.attendance-table td.present {
+  color: #00aa00; /* Green color for 'Present' status */
+}
+
+.attendance-table td.absent {
+  color: #ff0000; /* Red color for 'Absent' status */
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.print-button, .pdf-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.print-button:hover, .pdf-button:hover {
+  background-color: #555;
+}
+
+.date-picker-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.date-picker-container label {
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.date-picker {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Attendance Header Styles */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 2px solid #007bff;
+  /* border-left: 2px solid #007bff; */
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Intern List CSS */
+
+.intern-list {
+  padding: 20px;
+  background-color: #f5f7fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+.intern-list-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.intern-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.intern-table th, .intern-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.intern-table th {
+  background-color: #ccc;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+}
+
+.intern-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.intern-table tr:hover {
+  background-color: #e6f7ff;
+}
+
+.intern-table td {
+  color: #333;
+  font-size: 1rem;
+}
+/* src/components/InternList.css */
+
+.intern-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intern-list h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intern-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.intern-table th,
+.intern-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.intern-table th {
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.intern-table td {
+  font-size: 14px;
+  color: #555;
+}
+
+.intern-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.intern-table tbody tr:hover {
+  background-color: #e6f7ff;
+  cursor: pointer;
+}
+
+.intern-modal {
+  background: #fff;
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.intern-modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intern-modal h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.intern-table .delete-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.intern-table .delete-button:hover {
+  background-color: #555;
+}
+
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.close-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 5;
+    transform: scale(1);
+  }
+}
+
+/* Add more styling as needed */
+
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* src/components/InternDetails.css */
+
+.intern-details-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.intern-details-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width:600px;
+  padding-right: 20px;
+}
+
+.intern-details-form label {
+  font-size: 20px;
+  color: #555;
+}
+
+.intern-details-form input[type="text"],
+.intern-details-form input[type="email"],
+.intern-details-form input[type="date"],
+.intern-details-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.intern-details-form select {
+  appearance: none;
+  background-color: #fff;
+  padding: 10px;
+font-size: 18px;;
+  cursor: pointer;
+  width:100%;
+}
+
+.intern-details-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.intern-details-form button:hover {
+  background-color: #555;
+}
+
+/* src/App.css */
+
+.projects-page {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-project-form {
+  margin-bottom: 20px;
+}
+
+.add-project-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-project-form input,
+.add-project-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-project-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.add-project-form button:hover {
+  background-color: #555;
+}
+
+.projects-list {
+  margin-top: 20px;
+}
+
+.projects-list h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.project-tables {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.table {
+  width: 48%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table-divider {
+  width: 2px;
+  height: 100%;
+  background-color: #ddd;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .project-tables {
+    flex-direction: column;
+  }
+
+  .table-divider {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* Responsive Styles for Tablets */
+
+/* Adjustments for Tablet Screens */
+@media only screen and (max-width: 1024px) {
+  /* Adjust sidebar and content width */
+  #content {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+
+  /* Adjust font sizes */
+  * {
+    font-size: 1rem;
+  }
+
+  /* Additional adjustments as needed */
+}
+
+/* Adjustments for smaller Tablet Screens */
+@media only screen and (max-width: 768px) {
+  /* Adjust sidebar and content width */
+  #content {
+    width: calc(100% - 150px);
+    margin-left: 150px;
+  }
+
+  .sidebar {
+    width: 150px;
+  }
+
+  /* Additional adjustments as needed */
+}
